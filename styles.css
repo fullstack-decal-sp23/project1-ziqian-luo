@@ -1,0 +1,163 @@
+/* CSS Reset */
+body {
+    background-color: rgba(0, 0, 0, 0.5); /* set the background color to light gray */
+    background-image: url("img.jpg"); /* set the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+}
+
+#typing-header {
+    font-weight: bold;
+    color: white;
+    border-right: 3px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* heading styling */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+/* cneter the nav */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* cneter the form */
+form {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+label, input {
+    margin-right: 10px;
+}
+
+/* center the ul */
+ul {
+    list-style-type: square;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+/* Text styling */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Text styling */
+#paragraph {
+    margin-left: 18rem;
+    margin-right: 18rem;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+}
+
+/* Button styling */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Link styling */
+a { 
+    color: whitesmoke;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+  
+/* Link styling */
+a:hover {
+    font-size: 22px;
+    background-color: rgba(255,255,255,0.5);
+    color: black
+}
+
+.horizontal {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+  }
+  
+.horizontal li {
+    margin: 0 1rem;
+}
+
+/* Grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    margin: 20px;
+}
+
+/* Footer styling */
+footer p {
+    font-size: 14px;
+}
+
+.hover-paragraph {
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+.hover-paragraph:hover {
+    font-size: 18px;
+    background-color: yellow;
+    color: black;
+}

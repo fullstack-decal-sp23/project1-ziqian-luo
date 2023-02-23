@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Personal Website</title>
+    <meta name="author" content="Ziqian Luo">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body">
+    <header>
+        <h1 id="typing-header"></h1>
+    </header>
+    
+    <hr size = "1" width = "75%" align = "center" color = "white">
+    
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p id="paragraph">Hello, my name is Ziqian. I am a 20-year-old Cal student who loves coding. In my free time, you can usually find me doing nothing. I have a passion for the CS major, and I hope to become a SWE. I am excited to share my journey and experiences with you on this website, and I hope that you find my content informative and enjoyable to read. Thank you for visiting!</p>
+      </section>
+      
+      <section id="work">
+        <h2>My Work</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h3>CS61B BYOW</h3>
+            <p class="hover-paragraph">Build My Own World is an exciting project that utilizes Java and a variety of Java libraries to create a simulated world complete with inhabitants, landscapes, and ecosystems. The project offers an opportunity to implement and experiment with numerous algorithms, such as genetic algorithms, pathfinding algorithms, and neural networks. The result is a dynamic and ever-changing virtual world that can be customized and observed in real-time. With this project, you can explore the vast possibilities of Java programming and build your own world from scratch. Whether you're a seasoned developer or just starting, this project offers a fun and engaging challenge to hone your skills and creativity.</p>
+          </div> 
+          <div class="grid-item">
+            <h3>DeCal Personal Website</h3>
+            <p class="hover-paragraph">This is where I showcase my skills, projects, and passions as a developer. I have designed this website to be aesthetically pleasing, easy to navigate, and informative. On my website, you'll find information about me, my education, and work experience. You can also explore my portfolio and see the various projects I have worked on. I believe that this website is a great way to demonstrate my skills to the world, and I hope you enjoy exploring it as much as I have enjoyed creating it. Thank you for visiting my website!</p>
+          </div>
+          <div class="grid-item">
+            <h3>Universal Converter</h3>
+            <p class="hover-paragraph">The project I am working on is a conversion tool that can convert a variety of different things including units, currency, and numbers. This tool is designed to be easy to use and provide accurate results for all types of conversions. The user simply selects the type of conversion they would like to perform and enters the necessary information, such as the starting value and the desired unit or currency. The tool then performs the conversion and provides the user with the result. The project uses a variety of algorithms and libraries to ensure that all conversions are accurate and up-to-date with the latest exchange rates and unit conversions. Whether you are a student, a professional, or just someone who needs to convert values frequently, this tool is the perfect solution for all of your conversion needs.</p>
+          </div>
+        </div> 
+      </section>
+      
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>Email: <a href="ziqian.luo@berkeley.edu">ziqian.luo@berkeley.edu</a></li>
+          <li>Phone: 206-474-4479</li>
+          </ul>
+          <h4>Social Media:</h4>
+          <ul class="horizontal">
+            <li><a href="https://www.linkedin.com/in/ziqian-luo-a80426264/">LinkedIn</a></li>
+            <li><a href="https://github.com/ziqian-luo">Github</a></li>
+            <li><a href="https://www.instagram.com/hev0crj6fk/">Instagram</a></li>
+        </ul>
+      </section>
+    </main>
+    
+    <hr size = "1" width = "75%" align = "center" color = "white">
+    <br>
+
+    <script>
+        function myFunction() {
+          alert("Thank you for your question!");
+        }
+    </script>
+
+    <div class="container">
+        <form class="item">
+            <label for="text-input">Ask me a question:</label>
+            <input type="text" id="text-input">
+            <input type="submit" value="Submit" onclick="myFunction()">
+          </form>
+          <img src="oski.jpg" alt="oski" height="80px" width="80px" class="item">
+          <button class="item"><a href="https://www.redcross.org/donate/donation.html/">Donate</a></button>
+    </div>
+
+    <footer>
+        <p>Copyright © 2023 Ziqian Luo</p>
+    </footer>  
+  </body>
+
+  <script>
+        window.addEventListener('load', function() {
+        var i = 0;
+        var txt = 'Welcome to my personal website!';
+        var speed = 50;
+        var typingHeader = document.getElementById('typing-header');
+            
+        function typeWriter() {
+            if (i < txt.length) {
+                typingHeader.innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        typeWriter();
+    });
+    </script>
+
+</html>
